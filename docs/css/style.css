@@ -11,3 +11,21 @@ body {
     background-color: #F7EBE8;
     color: #FFA987;
 }
+
+header {
+    width: 25%;
+    float: left;
+    padding-bottom: 0;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav li {
+    border: none;
+}
+
+nav li a {
+    padding: 0.5em 1em;
+}
