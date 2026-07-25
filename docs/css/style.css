@@ -9,21 +9,40 @@ body {
     font-family: "Playfair Display", "Noto Serif", serif;
     line-height: 1.6;
     background-color: #F7EBE8;
-    color: #FFA987;
+    color: #444140;
 }
 
 header {
     width: 25%;
     float: left;
     padding-bottom: 0;
+    text-align: center;
+    background-color: #733100;
+    color: #F7EBE8;
+}
+
+header img {
+    display: block;
+    width: 25%;
+    height: auto;
+    margin : 0 auto;
+}
+
+nav {
+    float: right;
+    width: 70%;
+    margin: 4em 1em;
+    color: #444140;
 }
 
 nav ul {
-    text-align: right;
+    list-style-type: none;
+    text-align: center;
 }
 
 nav li {
-    border: none;
+    border-right: 1px solid #444140;
+    display: inline-block;
 }
 
 nav li a {
