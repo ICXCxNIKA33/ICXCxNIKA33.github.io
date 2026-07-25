@@ -2,44 +2,61 @@
 <html lang="en">
 
     <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Index</title>
+        <link rel="stylesheet" href="css/style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            .wrapper {
+                max-width: 1200px;     /* Prevents content from getting too wide */
+                margin-inline: auto;   /* Centers the wrapper horizontally */
+                padding-inline: 20px;  /* Stops content from touching screen edges */
+            }
+        </style>
     </head>
 
-    <body>
+    <!-- Header for my name and portrait -->
+    
 
-        <!-- Header for my name and portrait -->
+    <body>
         <header id="portrait">
-            <p>Henry Hill</p>
-            <a href = "index.html"><img src="profile.jpg" alt="Profile Picture"></a>
-            <p>software developer</p>
+            Henry Hill
+            <a href = "index.html"><img src="assets/images/profile.jpeg" width="300" height="280" alt="Profile Picture"></a>
+            software developer
         </header>
 
-        <!-- Navigation bar for the website -->
         <nav>
             <ul>
-                <li>index.html</li>
-                <li>about.html</li>
-                <li>resume.html</li>
-                <li>projects.html</li>
-                <li>contact.html</li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
-        <!-- Hero image -->
-         <div id="hero" class="tablet-desktop">
-            <img src="images/hero-image.jpg" alt="Summer coastline">
-         </div>
+        <main id="main-content">
+            <section class="card">
+                <h2><a href="about.html">About Me</a></h2>
+            </section>
 
+            <section class="card">
+                <h2><a href="resume.html">Resume</a></h2>
+            </section>
 
-        <main>
+            <section class="card">
+                <h2><a href="projects.html">Projects</a></h2>
+            </section>
 
+            <section class="card">
+                <h2><a href="contact.html">Contact</a></h2>
+            </section>
+            
         </main>
 
         <footer>
-
+            <p>&copy; 2023 Henry Hill. All rights reserved.</p>
+            <p><a href="mailto:henry.hill@example.com">henryhill304@gmail.com</a></p>
         </footer>
     </body>
 </html>
