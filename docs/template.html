@@ -14,18 +14,25 @@
                 padding-inline: 20px;  /* Stops content from touching screen edges */
             }
         </style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     </head>
 
     <!-- Header for my name and portrait -->
     
 
     <body>
-        <header id="portrait">
-            Henry Hill
-            <a href = "index.html"><img src="assets/images/profile.jpeg" width="300" height="280" alt="Profile Picture"></a>
-            software developer
-       
-
+        <header>
+            <h1>Henry Hill</h1>
+            <div class="portrait-container">
+            <a href = "index.html">
+                <img src="assets/images/profile.jpeg" alt="Profile Picture" class="portrait-image">
+            </a>
+            </div>
+            <p class="proffesion">Software Developer</p>
+            <p class="subtitle">Subtitle</p>
         <nav>
             <ul>
                 <li><a href="about.html">About</a></li>
@@ -38,8 +45,23 @@
         <!-- skip to main content link-->
          <a href="#main-content" class="skip-link">Skip to main content</a>
         </header>
-        
+
         <main id="main-content">
+            <section class="card">
+                <h2><a href="about.html">About Me</a></h2>
+            </section>
+
+            <section class="card">
+                <h2><a href="resume.html">Resume</a></h2>
+            </section>
+
+            <section class="card">
+                <h2><a href="projects.html">Projects</a></h2>
+            </section>
+
+            <section class="card">
+                <h2><a href="contact.html">Contact</a></h2>
+            </section>
             
         </main>
 

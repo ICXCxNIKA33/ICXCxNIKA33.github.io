@@ -2,33 +2,72 @@
 <html lang="en">
 
     <head>
-        <title>Template</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Index</title>
+        <link rel="stylesheet" href="css/style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            .wrapper {
+                max-width: 1200px;     /* Prevents content from getting too wide */
+                margin-inline: auto;   /* Centers the wrapper horizontally */
+                padding-inline: 20px;  /* Stops content from touching screen edges */
+            }
+        </style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     </head>
+
+    <!-- Header for my name and portrait -->
+    
 
     <body>
         <header>
-
-        </header>
-
+            <h1>Henry Hill</h1>
+            <div class="portrait-container">
+            <a href = "index.html">
+                <img src="assets/images/profile.jpeg" alt="Profile Picture" class="portrait-image">
+            </a>
+            </div>
+            <p class="proffesion">Software Developer</p>
+            <p class="subtitle">Subtitle</p>
         <nav>
             <ul>
-                <li>index.html</li>
-                <li>about.html</li>
-                <li>resume.html</li>
-                <li>projects.html</li>
-                <li>contact.html</li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
-        <main>
+        <!-- skip to main content link-->
+         <a href="#main-content" class="skip-link">Skip to main content</a>
+        </header>
 
+        <main id="main-content">
+            <section class="card">
+                <h2><a href="about.html">About Me</a></h2>
+            </section>
+
+            <section class="card">
+                <h2><a href="resume.html">Resume</a></h2>
+            </section>
+
+            <section class="card">
+                <h2><a href="projects.html">Projects</a></h2>
+            </section>
+
+            <section class="card">
+                <h2><a href="contact.html">Contact</a></h2>
+            </section>
+            
         </main>
 
         <footer>
-
+            <p>&copy; 2023 Henry Hill. All rights reserved.</p>
+            <p><a href="mailto:henry.hill@example.com">henryhill304@gmail.com</a></p>
         </footer>
     </body>
 </html>
