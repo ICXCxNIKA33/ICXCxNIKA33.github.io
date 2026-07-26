@@ -36,50 +36,66 @@ header {
     padding: none;
 }
 
-header img {
-    margin: 0 auto;
+header.portrait-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0.75rem 0;
+}
+
+header.portrait-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block; 
+    margin: 1rem auto;
+    border: 1px solid #733100;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 nav {
-   
-    background-color: #FFA987;
-    display: flex;
-    align-items: center;
-    gap:10px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: center;
-    overflow-x: auto;
-
-}
-
-nav ul {
-    list-style-type: none;
-    text-align: center;
-    display: flex;
-    min-height: 60px; /* Sets total nav height */
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
-nav li {
+nav ul {
     display: flex;
-    flex:1;
-    border: 1px solid #F7EBE8;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid #733100; 
+    box-sizing: border-box;
 }
 
-nav li a {
-    text-decoration: none;
-    color: #F7EBE8;
+nav li {
+    flex:1;
     text-align: center;
-    padding: 6px 12px; /* Reduce horizontal padding */
-    font-size: 14px;   /* Slightly lower font size if necessary */
+    border-right: 1px solid #733100; /* Adds a border between items */
+}
+
+nav li:last-child {
+    border-right: none; 
+}
+
+nav a {
+    display: block;
+    padding: 12px 0;
+    background-color: #ffa067;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Playfair Display", "Noto Serif", serif;
+    font-size: 0.9rem;
+    font-weight: 700;
     box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    align-items: center;    /* Centers text vertically */
-    justify-content: center; /* Centers text horizontally */
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #733100;
+    color: #fff;
 }
 
 /* styling link for the skip to main content bar */
