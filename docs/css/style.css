@@ -239,29 +239,15 @@ main {
 }
 
 /*footer styles */
-footer {
+footer{
     width: 100%;
-    box-sizing: border-box;
-    padding: 1.5rem 1rem 2rem 1rem;
-    height: auto !important;
-    min-height: fit-content;
-    overflow: visible;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     background-color: #733100;
-    color: #F7EBE8;
-    float: bottom;
-    bottom: 0;
-    padding: 20px;
-}
 
-footer a {
-    word-break: break-word; 
-    display: inline-block;
-    margin-top: 0.5rem;
-}
 
+}
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    padding: 0 1em;
+}
 /* Media queries for larger screens */
