@@ -376,6 +376,36 @@ main {
     background-color: #542300;
 }
 
+.contact-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.info-block {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    padding: 12px 15px;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.info-block a {
+    color: #333;
+    text-decoration: none;
+}
+
+.info-block a:hover {
+    text-decoration: underline;
+}
+
+.form-container {
+    border: 2px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+}
+
 /*footer styles */
 footer{
     width: 100%;
