@@ -156,7 +156,7 @@ main {
     gap: 1.5rem;
     padding: 1.5rem 1rem;
     width: 100%;   
-    max-width: 800px;
+    max-width: min(90%, 1200px);
     margin: 0 auto;
     box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
@@ -424,3 +424,46 @@ footer p a {
     text-decoration: none;
 }
 /* Media queries for larger screens */
+
+@media screen and (min-width: 768px) {
+ 
+
+    header {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .mobile-hero {
+        display: none;
+    }
+
+    main {
+        width: min(1200px, 90%);
+        margin: auto;
+    }
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .feature {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 1rem;
+        align-items: center;
+
+    }
+
+}
