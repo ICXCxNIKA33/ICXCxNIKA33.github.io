@@ -449,42 +449,13 @@ footer p a.email-btn {
 
     header {
         display: grid;
-        grid-template-columns: 160px 1fr;
+        flex-direction: center;
         align-items: center;
-    }
-
-    header h1 {
-        grid-column: 1;
-        grid-row: 1;
         text-align: center;
-    }
-
-    header .portrait-container {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    header .proffesion {
-        grid-column: 1;
-        grid-row: 3;
-        text-align: center;
-    }
-
-    header .subtitle {
-        grid-column: 2;
-        grid-row: 1/4;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
     }
 
     .subtitle {
         display: none;
-    }
-
-    header nav {
-        grid-column: 1 / -1;
     }
 
     nav ul {
