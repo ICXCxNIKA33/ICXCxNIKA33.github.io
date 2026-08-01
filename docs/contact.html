@@ -31,7 +31,7 @@
             <h1>Henry Hill</h1>
             <div class="portrait-container">
             <a href = "index.html">
-                <img src="assets/images/profile.jpeg" alt="Profile Picture" class="portrait-image">
+                <img src="assets/images/profile.jpeg" alt="Henry Hill, home" class="portrait-image">
             </a>
             </div>
             <p class="proffesion">Software Developer</p>
@@ -52,51 +52,64 @@
         </section>
 
 
-        <main class="contact-section">
+        <main class="contact-section" id="main-content">
 
-            <div class="whitespace">Active Whitespace</div>
+            <!-- Active whitespace -->
+            <div class="whitespace"></div>
 
-            <div class="contact-info-list">
-                <div class="info-block">
-                    <strong>Phone Number: </strong> <a href="tel:9545981697" target="_blank">(954)-598-1697</a>
+            <div class="contact-grid">
+
+                <div class="contact-info-list">
+
+                    <div class="info-group">
+                        <h3 class="info-group-label">Personal</h2>
+                        <div class="info-block">
+                            <strong>Phone Number: </strong> <a href="tel:9545981697" target="_blank">(954)-598-1697</a>
+                        </div>
+                        <div class="info-block">
+                            <strong>Email: </strong> <a href="mailto:henryhill304@gmail.com" target="_blank">Henryhill304@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-group">
+                        <h3 class="info-group-label">Web</h2>
+                        <div class="info-block">
+                            <strong>LinkedIn: </strong> <a href="www.linkedin.com/in/henry-hill-5571b7279" target="_blank">www.linkedin.com/in/henry-hill-5571b7279</a>
+                        </div>
+                        <div class="info-block">
+                            <strong>GitHub: </strong> <a href="https://github.com/ICXCxNIKA33" target="_blank">https://github.com/ICXCxNIKA33</a>
+                        </div>
+                    </div>    
                 </div>
-                <div class="info-block">
-                    <strong>Email: </strong> <a href="mailto:henryhill304@gmail.com" target="_blank">Henryhill304@gmail.com</a>
-                </div>
-                <div class="info-block">
-                    <strong>LinkedIn: </strong> <a href="www.linkedin.com/in/henry-hill-5571b7279" target="_blank">www.linkedin.com/in/henry-hill-5571b7279</a>
-                </div>
-                <div class="info-block">
-                    <strong>GitHub: </strong> <a href="https://github.com/ICXCxNIKA33" target="_blank">https://github.com/ICXCxNIKA33</a>
+
+                
+                <div class="contact-form-wrap">
+                <h2>Contact Me</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
                 </div>
             </div>
-
-            <h2>Contact Me</h2>
-
-            <form class="contact-form" action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required />
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required />
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required />
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-            
         </main>
 
         <footer>
