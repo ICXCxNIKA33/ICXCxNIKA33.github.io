@@ -87,12 +87,17 @@ img, video {
 header {
     float: top;
     top: 0;
-    background-color: #733100;
+    background: linear-gradient(160deg, #8a3d05 0%, #733100 55%, #5c2700 100%);
     color: #F7EBE8;
     vertical-align: center;
     text-align: center;
     clear: both;
     padding: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .profession {
@@ -163,12 +168,15 @@ nav a {
     font-size: 0.9rem;
     font-weight: 700;
     box-sizing: border-box;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 nav a:hover,
 nav a:focus {
     background-color: #733100;
     color: #fff;
+    box-shadow: inset 0 -3px 0 rgba(255, 255, 255, 0.3);
 }
 
 .hero {
@@ -212,6 +220,7 @@ main {
     align-items: center; /* Centers content vertically */
     justify-content: center; /* Centers content horizontally */
     border-radius: 4px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
 .card a {
@@ -236,6 +245,8 @@ main {
 .card a:focus {
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 4px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
 }
 
 .card h2 {
@@ -254,7 +265,8 @@ main {
 
     /* active whitespace */
     margin-bottom: 2rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.2s ease;
 }
 
 .info-card h2 {
@@ -300,10 +312,10 @@ main {
     text-align: center;
     border-right: 1px solid #444;
     border-bottom: 1px solid #444;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: box-shadow 0.2s ease;
 }
 
 .skill-card:nth-child(2n) {
@@ -312,6 +324,10 @@ main {
 
 .skill-card:nth-last-child(-n + 2) {
     border-bottom: none;
+}
+
+.skill-card:hover {
+    box-shadow: inset 0 0 0 2px #733100;
 }
 
 .job {
@@ -365,6 +381,7 @@ main {
 .project-link:hover .project-card,
 .project-link:focus .project-card {
     box-shadow: 0 8px 16px -8px rgba(0,0,0,0.25);
+    transform: translateY(-3px);
 }
 
 .contact-section {
@@ -528,6 +545,7 @@ footer p a.email-btn {
         border: 1px solid #ccc;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         min-height: 430px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     }
 
     .feature img {
@@ -545,7 +563,7 @@ footer p a.email-btn {
 
     .feature-link:hover .feature,
     .feature-link:focus .feature {
-        transform: translate(-3px);
+        transform: translateY(-3px);
         box-shadow: 0 8px 16px -8px rgba(0,0,0,0.25)
     }
 
@@ -575,6 +593,12 @@ footer p a.email-btn {
     .job {
         border: 2px solid #444;
         padding: 1rem;
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+
+    .job:hover {
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
     }
 
     .project-card {
@@ -582,13 +606,17 @@ footer p a.email-btn {
         grid-template-columns: 1fr 1fr 2fr;
         margin-bottom: 2rem;
         min-height: 291px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
     }
 
     .project-image {
         display: block;
         width: 100%;
-        aspect-ratio: 1/1;
-        object-fit: cover;
+        height: 100%;
+        object-fit: contain;
+        background-color: #FFF;
+        padding: 1rem;
     }
 
     .project-card h2 {
