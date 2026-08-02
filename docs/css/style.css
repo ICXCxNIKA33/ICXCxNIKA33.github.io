@@ -196,7 +196,33 @@ nav a:focus {
     width: 100%;
 }
 
+.transcript-toggle {
+    margin-top: 0.75rem;
+    padding: 8px 16px;
+    background-color: #FFA067;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: "Playfair Display", "Noto Serif", serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
 
+.transcript-toggle:hover {
+    opacity: 0.85;
+}
+
+.transcript {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+    color: #444140;
+}
 
 /* Main content styles */
 main.flex {
